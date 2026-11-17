@@ -1,0 +1,10 @@
+{
+  "description": "Conecta a mujeres colombianas en Valencia con recursos de vivienda, empleo, bienestar y orientación, además de organizaciones y apoyo comunitario.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
