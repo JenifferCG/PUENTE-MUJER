@@ -23,17 +23,22 @@ jobs:
       - name: Descargar proyecto
         uses: actions/checkout@v4
 
+      - name: Configurar pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: pnpm
 
       - name: Instalar dependencias
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: Compilar aplicación
-        run: npm run build
+        run: pnpm run build
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
