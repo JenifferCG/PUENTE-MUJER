@@ -322,7 +322,7 @@ export default function App() {
         <div className="hero-visual">
           <div className="photo-frame">
             <img
-              src="/PUENTE-MUJER/images/puente-mujer-hero.jpg"
+              src="/PUENTE-MUJER/puente-mujer-hero.jpg"
               alt="Grupo de amigas caminando juntas en una ciudad mediterránea"
             />
             <div className="photo-wash" />
